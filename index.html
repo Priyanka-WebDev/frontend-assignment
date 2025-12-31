@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <!-- Primary (large) navbar -->
+      <nav class="nav nav--primary" aria-label="Primary navigation">
+        <div class="nav__container">
+          <div class="nav__brand">
+            <img
+              src="https://premierschoolsexhibition.com/assets/images/headerlogo.webp"
+              alt="Premier Schools Exhibition"
+              class="nav__logo"
+            />
+          </div>
+
+          <a href="#register" class="nav__cta" role="button">
+            → Register Now
+          </a>
+        </div>
+      </nav>
+
+      <!-- Sticky navbar -->
+      <nav
+        class="nav nav--sticky"
+        aria-label="Sticky navigation"
+        id="stickyNav"
+      >
+        <div class="nav__container">
+          <div class="nav__brand nav__brand--small">
+            <img
+              src="https://premierschoolsexhibition.com/assets/images/headerlogo.webp"
+              alt="Premier Schools Exhibition"
+              class="nav__logo nav__logo--small"
+            />
+          </div>
+
+          <a href="#register" class="nav__cta nav__cta--small" role="button">
+            Register Now →
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Hero Section: Discover Top Schools">
+      <div class="hero__container">
+        <!-- LEFT CONTENT -->
+        <div class="hero__left">
+          <h1 class="hero__title">
+            Discover Gurugram’s <br />
+            <span class="hero__highlight">Top 30+ Schools</span>
+          </h1>
+          <h4 class="hero__subtitle">ALL IN ONE PLACE</h4>
+
+          <div class="hero__event-box-wrapper">
+            <div class="hero__event-box">
+              <div class="hero__event-box-left">
+                <h3 class="hero__event-text">
+                  Apparel House, Sec 44, Gurugram
+                </h3>
+              </div>
+              <div class="hero__event-box-right">
+                <h3 class="hero__event-text">
+                  2–3 August 2025 | Sat–Sun | 10AM – 6PM
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENTER SCROLLING IMAGES -->
+        <div class="hero__center" aria-hidden="true">
+          <div class="hero__image-column">
+            <div class="hero__image-track">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=60"
+                alt="Students learning"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178"
+                alt="Classroom"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
+                alt="School building"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7"
+                alt="Playground"
+              />
+            </div>
+          </div>
+
+          <div class="hero__image-column hero__image-column--reverse">
+            <div class="hero__image-track">
+              <img
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136"
+                alt="Students collaborating"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+                alt="School activity"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d"
+                alt="Library"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1516627145497-ae6968895b74"
+                alt="Classroom session"
+              />
+            </div>
+          </div>
+
+          <div class="hero__image-column">
+            <div class="hero__image-track">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=60"
+                alt="Students learning"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNoKg6J0vbxtbBog_k3aXQYyrfknbcNodjXg&s"
+                alt="School campus"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178"
+                alt="Classroom"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTggsd5o718DN-HN64pILdnyWTdqJux8uZlCg&s"
+                alt="Students learning"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="hero__right">
+          <h3 class="hero__form-title">Enquire Now</h3>
+          <form class="hero__form" aria-label="Enquiry Form">
+            <input
+              type="text"
+              id="parent-name"
+              class="hero__form-input"
+              placeholder="Parent’s Name"
+            />
+
+            <input
+              type="tel"
+              id="phone-number"
+              class="hero__form-input"
+              placeholder="Phone number"
+            />
+
+            <input
+              type="text"
+              id="grade"
+              class="hero__form-input"
+              placeholder="Which grade are you looking for?"
+            />
+
+            <div class="hero__form-buttons">
+              <button class="hero__form-submit">↗ SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- participating sections -->
+    <section class="stats" aria-labelledby="stats-heading">
+      <div class="stats__list" role="list">
+        <div class="stats__item" role="listitem">
+          <span class="stats__label">Trusted by</span>
+          <h3 class="stats__value">1 Million+</h3>
+          <p class="stats__description">Parents</p>
+        </div>
+
+        <div class="stats__item" role="listitem">
+          <h3 class="stats__value">22+</h3>
+          <p class="stats__description">Years of Legacy</p>
+        </div>
+
+        <div class="stats__item" role="listitem">
+          <h3 class="stats__value">500+</h3>
+          <p class="stats__description">Participating Schools</p>
+        </div>
+
+        <div class="stats__item" role="listitem">
+          <h3 class="stats__value">17 Cities</h3>
+          <p class="stats__description">Across the Globe</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTICIPATING SCHOOLS -->
+    <section class="schools" aria-label="Participating Schools">
+      <h2 class="schools__title">Participating Schools</h2>
+
+      <!-- Row moving left -->
+      <div class="schools__row schools__row--left" tabindex="0" role="region" aria-label="Scrolling school logos">
+        <div class="schools__track">
+          <div class="schools__logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhEC1uX-fr-6oZCswENlo_PX-uwNDzwe7wpQ&s"
+              alt="School 1 Logo"
+            />
+          </div>
+          <div class="schools__logo">
+            <img
+              src="https://media.licdn.com/dms/image/v2/C4E0BAQHNI4hxuHQ66g/company-logo_200_200/company-logo_200_200/0/1631322843623?e=2147483647&v=beta&t=FmDrAhKWCLJFqpIeghiBJT6KIYo40Y_p52Ul33ie2L4"
+              alt="School 2 Logo"
+            />
+          </div>
+          <div class="schools__logo">
+            <img
+              src="https://images.unsplash.com/photo-1758432274776-7f344711e017?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmFyc2l0eSUyMGxvZ298ZW58MHx8MHx8fDA%3D"
+              alt="School 3 Logo"
+            />
+          </div>
+          <div class="schools__logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhEC1uX-fr-6oZCswENlo_PX-uwNDzwe7wpQ&s"
+              alt="School 4 Logo"
+            />
+          </div>
+          <!-- Repeat logos for seamless effect -->
+          <div class="schools__logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTehCGcZsPuEIriAb7bvwuuMgXn3_dCQsEpAQ&s"
+              alt="School 1 Logo"
+            />
+          </div>
+          <div class="schools__logo">
+            <img
+              src="https://media.licdn.com/dms/image/v2/C4E0BAQHNI4hxuHQ66g/company-logo_200_200/company-logo_200_200/0/1631322843623?e=2147483647&v=beta&t=FmDrAhKWCLJFqpIeghiBJT6KIYo40Y_p52Ul33ie2L4"
+              alt="School 2 Logo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Row moving right -->
+      <div class="schools__row schools__row--right" tabindex="0">
+        <div class="schools__track">
+          <div class="schools__logo">
+            <img
+              src="https://media.licdn.com/dms/image/v2/C4E0BAQHNI4hxuHQ66g/company-logo_200_200/company-logo_200_200/0/1631322843623?e=2147483647&v=beta&t=FmDrAhKWCLJFqpIeghiBJT6KIYo40Y_p52Ul33ie2L4"
+              alt="School 5 Logo"
+            />
+          </div>
+          <div class="schools__logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTehCGcZsPuEIriAb7bvwuuMgXn3_dCQsEpAQ&s"
+              alt="School 6 Logo"
+            />
+          </div>
+          <div class="schools__logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhEC1uX-fr-6oZCswENlo_PX-uwNDzwe7wpQ&s"
+              alt="School 7 Logo"
+            />
+          </div>
+          <div class="schools__logo">
+            <img
+              src="https://images.unsplash.com/photo-1758432274776-7f344711e017?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmFyc2l0eSUyMGxvZ298ZW58MHx8MHx8fDA%3D"
+              alt="School 8 Logo"
+            />
+          </div>
+          <!-- Repeat logos for seamless effect -->
+          <div class="schools__logo">
+            <img
+              src="https://media.licdn.com/dms/image/v2/C4E0BAQHNI4hxuHQ66g/company-logo_200_200/company-logo_200_200/0/1631322843623?e=2147483647&v=beta&t=FmDrAhKWCLJFqpIeghiBJT6KIYo40Y_p52Ul33ie2L4"
+              alt="School 5 Logo"
+            />
+          </div>
+          <div class="schools__logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhEC1uX-fr-6oZCswENlo_PX-uwNDzwe7wpQ&s"
+              alt="School 6 Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="school-section">
+      <h2>Choose the School That Fits You Best</h2>
+
+      <div class="school-grid">
+        <div class="school-card">
+          <img
+            src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+          />
+          <div class="overlay">
+            <h3>Pre-Schools & Early Learning Centres</h3>
+            <p>
+              Nurturing foundational skills for toddlers and pre-primary
+              children.
+            </p>
+          </div>
+        </div>
+
+        <div class="school-card">
+          <img
+            src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+          />
+          <div class="overlay">
+            <h3>K-12 CBSE Day Schools</h3>
+            <p>
+              Reputed schools offering complete schooling from Kindergarten to
+              Grade 12.
+            </p>
+          </div>
+        </div>
+
+        <div class="school-card">
+          <img
+            src="data:image/jpeg;base64,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"
+          />
+          <div class="overlay">
+            <h3>Heritage to New-Age Schools</h3>
+            <p>
+              Time-tested schools to innovative pedagogy, tech-enabled
+              future-ready schools.
+            </p>
+          </div>
+        </div>
+
+        <div class="school-card">
+          <img
+            src="https://images.unsplash.com/photo-1588072432836-e10032774350"
+          />
+          <div class="overlay">
+            <h3>International Curriculum Schools</h3>
+            <p>Offering IB, Cambridge, Finnish and other global curricula.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT SECTION -->
+    <section class="appointment" aria-labelledby="appointment-heading">
+      <div class="appointment__content">
+        <span class="appointment__tagline"
+          >Exciting Opportunities for Parents!</span
+        >
+
+        <h1 id="appointment-heading" class="appointment__title">
+          Pre-schedule Your <br />
+          School Appointments
+        </h1>
+
+        <p class="appointment__subtext">To Avoid Rush</p>
+
+        <button class="appointment__cta" type="button">
+          <span class="appointment__cta-icon">↗</span> PRE-SCHEDULE NOW
+        </button>
+      </div>
+
+      <div class="appointment__image">
+        <img
+          src="https://media.istockphoto.com/id/1286392923/photo/parent-teacher-meeting.jpg?s=612x612&w=0&k=20&c=NtqV0s7HgmtvQFcZ9b7EpRR0ItlpHqQs5FzEYO08QMs="
+          alt="Parent scheduling a school appointment"
+        />
+      </div>
+    </section>
+
+    <!-- EXHIBITION SECTION -->
+    <section class="exhibition" aria-labelledby="exhibition-heading">
+      <h2 id="exhibition-heading" class="exhibition__title">
+        What Makes This Exhibition a Must-Visit
+      </h2>
+
+      <div
+        class="exhibition__cards"
+        role="list"
+        tabindex="0"
+        aria-label="Exhibition Highlights"
+      >
+        <article class="exhibition__card" role="listitem">
+          <i class="fa-solid fa-user" aria-hidden="true"></i>
+          <h3 class="exhibition__card-title">
+            Interact Directly with School Heads
+          </h3>
+          <p class="exhibition__card-description">
+            Get answers straight from the experts Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Facilis, quod?
+          </p>
+        </article>
+
+        <article class="exhibition__card" role="listitem">
+          <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+          <h3 class="exhibition__card-title">Compare Curriculum & Pedagogy</h3>
+          <p class="exhibition__card-description">
+            CBSE, ICSE, IB, Cambridge, Finnish & more Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Mollitia, ratione.
+          </p>
+        </article>
+
+        <article class="exhibition__card" role="listitem">
+          <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+          <h3 class="exhibition__card-title">
+            Exclusive Fee Structures & Offers
+          </h3>
+          <p class="exhibition__card-description">
+            Transparent pricing and special benefits Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Repellendus, ea.
+          </p>
+        </article>
+
+        <article class="exhibition__card" role="listitem">
+          <i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>
+          <h3 class="exhibition__card-title">Explore School Offerings</h3>
+          <p class="exhibition__card-description">
+            Infrastructure, co-curriculars & culture Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ratione, corrupti.
+          </p>
+        </article>
+
+        <article class="exhibition__card" role="listitem">
+          <i class="fa-regular fa-handshake" aria-hidden="true"></i>
+          <h3 class="exhibition__card-title">On-the-Spot Counselling</h3>
+          <p class="exhibition__card-description">
+            Instant guidance for admissions Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eveniet, voluptatum.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <!-- Footer Top -->
+      <div class="footer__top">
+        <!-- Logo -->
+        <div class="footer__logo">
+          <img
+            src="https://premierschoolsexhibition.com/assets/images/headerlogo.webp"
+            alt="Premier Schools Exhibition Logo"
+          />
+        </div>
+
+        <!-- Office Locations -->
+        <div class="footer__item" aria-label="Corporate Office Address">
+          <div class="footer__icon">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          </div>
+          <div class="footer__details">
+            <h4 class="footer__title">Corporate Office:</h4>
+            <address class="footer__text">
+              Suite B-5, Ballygunge Park Tower,<br />
+              67B Ballygunge Circular Road,<br />
+              Kolkata - 700019
+            </address>
+          </div>
+        </div>
+
+        <div class="footer__item" aria-label="Ahmedabad Office Address">
+          <div class="footer__icon">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          </div>
+          <div class="footer__details">
+            <h4 class="footer__title">Ahmedabad Office:</h4>
+            <address class="footer__text">
+              12/AA, Swastik Chambers, Near CU<br />
+              Shah College, Ashram Road,<br />
+              Ahmedabad - 380009
+            </address>
+          </div>
+        </div>
+
+        <!-- Call Us -->
+        <div class="footer__item" aria-label="Phone Numbers">
+          <div class="footer__icon">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          </div>
+          <div class="footer__details">
+            <h4 class="footer__title">Call Us:</h4>
+            <p class="footer__text">
+              <a href="tel:9674805912" class="footer__link">9674805912</a><br />
+              <a href="tel:9674585012" class="footer__link">9674585012</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer__social" aria-label="Follow us on social media">
+          <h4 class="footer__title">Follow Us</h4>
+          <div class="footer__social-icons">
+            <a href="#" class="footer__social-link" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="footer__social-link" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p>&copy; 2025 Premier Schools Exhibition. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
