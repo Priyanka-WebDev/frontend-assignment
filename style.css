@@ -1269,7 +1269,7 @@
 
         .nav__logo {
           position: absolute;
-          top: 0px;
+          top: 4px;
           left: 16px;
           width: 85px;
           z-index: 10;
